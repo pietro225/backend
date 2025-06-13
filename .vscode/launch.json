@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AnaliseVetor",
+            "request": "launch",
+            "mainClass": "com.mycompany.AnaliseVetor",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Recuperacao",
+            "request": "launch",
+            "mainClass": "com.mycompany.Recuperacao",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
             "name": "Ex03",
             "request": "launch",
             "mainClass": "com.mycompany.Ex03",

@@ -25,4 +25,23 @@ public class Pessoa {
         System.out.println("Altura (m): " + altura);
     }
 
+    /**
+     * Nomenclatura de métodos
+     *
+     * Métodos/Funções indicam ações, e por padrão utilizam verbos.
+     *
+     * Ex.: correr, andar, caminhar ...
+     */
+    public void atribuirSalario(double valor) {
+        this.salario = valor;
+
+        System.out.println("O novo salário de " + this.nome + " é: " + this.salario);
+    }
+
+    public void atribuirSalario(double valor, double bonus) {
+        this.salario = valor + bonus;
+
+        System.out.println("O novo salário de " + this.nome + " é: " + this.salario + " mais um bônus de " + bonus);
+    }       
+
 }

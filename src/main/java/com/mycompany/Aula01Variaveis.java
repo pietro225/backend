@@ -1,6 +1,6 @@
 package com.mycompany;
 
-public class Aula01Variavel {
+public class App {
 
     public static void main(string[] args)  {
        //variavel logica 

@@ -1,31 +1,25 @@
 package com.mycompany.poo.aula12;
 
 public class Pessoa {
-    /**
-     * Construtores
+    /***
+     * Castrutores
      * 
-     * Utilizamos o método construtor para inicializar nossas classes,
-     * funcionando com uma configuração previa da mesma.
-     * 
-     * toda classe quando é criada, possui um método coNtrutor vazio
-     * que é chamado no momento que instanciamos a mesma.
-     * 
-     * uma mesma classe pode conter mais de um contrutor,
+     * toda classe pode conter mais de um construtor,
      * porem cada construtor deve possuir quantidade
-     * e tipos de parametros diferentes
+     * e tipo parametros diferentes
+     * 
      */
+
     private String nome;
     private int idade;
     private double altura;
     private double peso;
 
-    // Contrutor padrao
-    // Todo método construtor possui o mesmo nome da classe
     public Pessoa() {
-        System.out.println("Chamando o construtor padrão");
+        System.out.println("chamando o contrutor padrao");
     }
 
-    prublic Pessoa(String nome) {
+    public Pessoa(String nome) {
         this.nome = nome;
         System.out.println("Chamando construtor 2");
     }
@@ -42,8 +36,33 @@ public class Pessoa {
 
     // Não pode ter a mesma quantidade de parâmetros e tipos
     // public Pessoa(double peso) {
-    //     this.peso = peso;
+    // this.peso = peso;
     // }
+
+    public Pessoa(String nome, double altura) {
+        this.nome = nome;
+        this.altura = altura;
+        System.out.println("Chamando construtor 5");
+    }
+
+    /**
+     * Sobrecarga de Métodos
+     *
+     * Sobrecarga é quando possuímos vários métodos com o mesmo nome,
+     * porém com diferenças quanto à quantidade, tipos de parâmetros
+     * e retorno.
+     *
+     * O método construtor é um exemplo de sobrecarga, quando definimos
+     * mais de uma implementação.
+     */
+
+    public void conversar() {
+        System.out.println(this.nome + " está conversando sozinho");
+    }
+
+    public void conversar(String frase) {
+        System.out.println(this.nome + " está falando '" + frase + "' !!");
+    }
 
     public String getNome() {
         return nome;
@@ -53,20 +72,20 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
     public double getAltura() {
         return altura;
     }
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
     public double getPeso() {
